@@ -24,10 +24,16 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 67%;
+    
 }
 
-
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 main {
     text-align: center;
@@ -67,11 +73,16 @@ p {
     background-color: rgba(34, 212, 253, 1);
 }
 
-img {
-    max-height: 100%;
+.developer-image {
     max-width: 100%;
-    display: block;
-    margin: 0 auto;
+    height: auto;
+    margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .developer-image {
+        margin-top: 10px; 
+    }
 }
 
 @media screen and (max-width: 600px) {
