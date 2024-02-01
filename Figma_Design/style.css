@@ -12,14 +12,19 @@ body {
 }
 
 .container {
-    background-color: rgba(119, 117, 117, 0.8);
-    border: 2px solid rgba(172, 171, 171, 0.2);
-    box-shadow: 0 0 10px rgba(131, 129, 129, 0.2);
+    background-color: rgba(17, 14, 14, 0.8);
+    border: 2px solid rgba(37, 26, 26, 0.2);
+    box-shadow: 0 0 10px rgba(47, 47, 47, 0.2);
     backdrop-filter: blur(20px);
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 20px;
     width: 80%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 67%;
 }
 
 
@@ -30,6 +35,7 @@ main {
 
 h1 {
     color: #22d4fd;
+    font-size: 2em;
 }
 
 strong {
@@ -62,8 +68,21 @@ p {
 }
 
 img {
-    width: 100%;
-    max-width: 400px;
+    max-height: 100%;
+    max-width: 100%;
     display: block;
-    margin: 20px auto;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+    .button {
+        margin: 5px 0;
+    }
 }
