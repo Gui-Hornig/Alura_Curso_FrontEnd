@@ -1,8 +1,49 @@
-body{
+body {
     background-color: #150f18;
     color: #F6F6F6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-strong{
+header, footer {
+    background-color: #0d0a0e;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
     color: #22d4fd;
+}
+
+strong {
+    color: #22d4fd;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #22d4fd;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+a:hover {
+    border-bottom: 1px solid #22d4fd;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
 }
